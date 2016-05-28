@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBD84BA91CFA4F9900F462DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD84BA81CFA4F9900F462DB /* AppDelegate.swift */; };
+		DBD84BAB1CFA4F9900F462DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD84BAA1CFA4F9900F462DB /* ViewController.swift */; };
+		DBD84BAE1CFA4F9900F462DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD84BAC1CFA4F9900F462DB /* Main.storyboard */; };
+		DBD84BB01CFA4F9900F462DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD84BAF1CFA4F9900F462DB /* Assets.xcassets */; };
+		DBD84BB31CFA4F9900F462DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD84BB11CFA4F9900F462DB /* LaunchScreen.storyboard */; };
+		DBD84BBE1CFA4F9900F462DB /* BebeSanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD84BBD1CFA4F9900F462DB /* BebeSanoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBD84BBA1CFA4F9900F462DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBD84B9D1CFA4F9900F462DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBD84BA41CFA4F9900F462DB;
+			remoteInfo = BebeSano;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DBD84BA51CFA4F9900F462DB /* BebeSano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BebeSano.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBD84BA81CFA4F9900F462DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBD84BAA1CFA4F9900F462DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBD84BAD1CFA4F9900F462DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBD84BAF1CFA4F9900F462DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBD84BB21CFA4F9900F462DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBD84BB41CFA4F9900F462DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBD84BB91CFA4F9900F462DB /* BebeSanoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BebeSanoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBD84BBD1CFA4F9900F462DB /* BebeSanoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BebeSanoTests.swift; sourceTree = "<group>"; };
+		DBD84BBF1CFA4F9900F462DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBD84BA21CFA4F9900F462DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBD84BB61CFA4F9900F462DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBD84B9C1CFA4F9900F462DB = {
+			isa = PBXGroup;
+			children = (
+				DBD84BA71CFA4F9900F462DB /* BebeSano */,
+				DBD84BBC1CFA4F9900F462DB /* BebeSanoTests */,
+				DBD84BA61CFA4F9900F462DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBD84BA61CFA4F9900F462DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBD84BA51CFA4F9900F462DB /* BebeSano.app */,
+				DBD84BB91CFA4F9900F462DB /* BebeSanoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBD84BA71CFA4F9900F462DB /* BebeSano */ = {
+			isa = PBXGroup;
+			children = (
+				DBD84BA81CFA4F9900F462DB /* AppDelegate.swift */,
+				DBD84BAA1CFA4F9900F462DB /* ViewController.swift */,
+				DBD84BAC1CFA4F9900F462DB /* Main.storyboard */,
+				DBD84BAF1CFA4F9900F462DB /* Assets.xcassets */,
+				DBD84BB11CFA4F9900F462DB /* LaunchScreen.storyboard */,
+				DBD84BB41CFA4F9900F462DB /* Info.plist */,
+			);
+			path = BebeSano;
+			sourceTree = "<group>";
+		};
+		DBD84BBC1CFA4F9900F462DB /* BebeSanoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBD84BBD1CFA4F9900F462DB /* BebeSanoTests.swift */,
+				DBD84BBF1CFA4F9900F462DB /* Info.plist */,
+			);
+			path = BebeSanoTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBD84BA41CFA4F9900F462DB /* BebeSano */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBD84BC21CFA4F9900F462DB /* Build configuration list for PBXNativeTarget "BebeSano" */;
+			buildPhases = (
+				DBD84BA11CFA4F9900F462DB /* Sources */,
+				DBD84BA21CFA4F9900F462DB /* Frameworks */,
+				DBD84BA31CFA4F9900F462DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BebeSano;
+			productName = BebeSano;
+			productReference = DBD84BA51CFA4F9900F462DB /* BebeSano.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBD84BB81CFA4F9900F462DB /* BebeSanoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBD84BC51CFA4F9900F462DB /* Build configuration list for PBXNativeTarget "BebeSanoTests" */;
+			buildPhases = (
+				DBD84BB51CFA4F9900F462DB /* Sources */,
+				DBD84BB61CFA4F9900F462DB /* Frameworks */,
+				DBD84BB71CFA4F9900F462DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBD84BBB1CFA4F9900F462DB /* PBXTargetDependency */,
+			);
+			name = BebeSanoTests;
+			productName = BebeSanoTests;
+			productReference = DBD84BB91CFA4F9900F462DB /* BebeSanoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBD84B9D1CFA4F9900F462DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "César Gutiérrez Tapiador";
+				TargetAttributes = {
+					DBD84BA41CFA4F9900F462DB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					DBD84BB81CFA4F9900F462DB = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DBD84BA41CFA4F9900F462DB;
+					};
+				};
+			};
+			buildConfigurationList = DBD84BA01CFA4F9900F462DB /* Build configuration list for PBXProject "BebeSano" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBD84B9C1CFA4F9900F462DB;
+			productRefGroup = DBD84BA61CFA4F9900F462DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBD84BA41CFA4F9900F462DB /* BebeSano */,
+				DBD84BB81CFA4F9900F462DB /* BebeSanoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBD84BA31CFA4F9900F462DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBD84BB31CFA4F9900F462DB /* LaunchScreen.storyboard in Resources */,
+				DBD84BB01CFA4F9900F462DB /* Assets.xcassets in Resources */,
+				DBD84BAE1CFA4F9900F462DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBD84BB71CFA4F9900F462DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBD84BA11CFA4F9900F462DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBD84BAB1CFA4F9900F462DB /* ViewController.swift in Sources */,
+				DBD84BA91CFA4F9900F462DB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBD84BB51CFA4F9900F462DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBD84BBE1CFA4F9900F462DB /* BebeSanoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBD84BBB1CFA4F9900F462DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBD84BA41CFA4F9900F462DB /* BebeSano */;
+			targetProxy = DBD84BBA1CFA4F9900F462DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBD84BAC1CFA4F9900F462DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBD84BAD1CFA4F9900F462DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBD84BB11CFA4F9900F462DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBD84BB21CFA4F9900F462DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBD84BC01CFA4F9900F462DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBD84BC11CFA4F9900F462DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBD84BC31CFA4F9900F462DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BebeSano/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cesar.BebeSano;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DBD84BC41CFA4F9900F462DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BebeSano/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cesar.BebeSano;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DBD84BC61CFA4F9900F462DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BebeSanoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cesar.BebeSanoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BebeSano.app/BebeSano";
+			};
+			name = Debug;
+		};
+		DBD84BC71CFA4F9900F462DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BebeSanoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cesar.BebeSanoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BebeSano.app/BebeSano";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBD84BA01CFA4F9900F462DB /* Build configuration list for PBXProject "BebeSano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBD84BC01CFA4F9900F462DB /* Debug */,
+				DBD84BC11CFA4F9900F462DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBD84BC21CFA4F9900F462DB /* Build configuration list for PBXNativeTarget "BebeSano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBD84BC31CFA4F9900F462DB /* Debug */,
+				DBD84BC41CFA4F9900F462DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DBD84BC51CFA4F9900F462DB /* Build configuration list for PBXNativeTarget "BebeSanoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBD84BC61CFA4F9900F462DB /* Debug */,
+				DBD84BC71CFA4F9900F462DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBD84B9D1CFA4F9900F462DB /* Project object */;
+}
