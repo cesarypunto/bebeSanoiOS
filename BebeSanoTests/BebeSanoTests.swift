@@ -11,26 +11,27 @@ import XCTest
 
 class BebeSanoTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    // MARK: Child Tests
+    // Tests to confirm that the Child initializer returns when no name.
+    func testChildInitialization() {
+        let potentialChild = Child(photo: nil, name: "Name", birthDate: NSDate() , gender: Child.EGender.Male )
+        XCTAssertNotNil(potentialChild)
+        
+        // Failure cases.
+        let noName = Child(photo: nil, name: "", birthDate: NSDate() , gender: Child.EGender.Male )
+        XCTAssertNil(noName, "Empty name is invalid")
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+
+    // Tests to confirm that the FoodTracker initializer returns when no name.
+    func testFoodTrack() {
+        let potentialFoodTrack = FoodTrack(foodName: "Name", eventDate: NSDate() , tolerated: true, comment: "")
+        XCTAssertNotNil(potentialFoodTrack)
+        
+        // Failure cases.
+        let noName = FoodTrack(foodName: "", eventDate: NSDate() , tolerated: true, comment: "")
+        XCTAssertNotNil(potentialFoodTrack)
+        XCTAssertNil(noName, "Empty name is invalid")
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
-    }
+
     
 }

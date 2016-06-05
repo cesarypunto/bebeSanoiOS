@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB3A65731D021258007A2A27 /* ChildTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3A65721D021258007A2A27 /* ChildTableViewController.swift */; };
+		DB3A65751D021FA4007A2A27 /* PercentileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3A65741D021FA4007A2A27 /* PercentileViewController.swift */; };
+		DB3A65781D04C4E9007A2A27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB3A65761D04C4E9007A2A27 /* Main.storyboard */; };
+		DB3FA0D71CFF7221007FA8B5 /* Percentile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3FA0D61CFF7221007FA8B5 /* Percentile.swift */; };
+		DB3FA0D81CFF7221007FA8B5 /* Percentile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3FA0D61CFF7221007FA8B5 /* Percentile.swift */; };
+		DB3FA0DA1D00C746007FA8B5 /* ChildTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3FA0D91D00C746007FA8B5 /* ChildTableViewCell.swift */; };
+		DB6586D81CFADDCC00454235 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6586D71CFADDCC00454235 /* DatePickerDialog.swift */; };
+		DBAFB3D81CFB0E0F0083B061 /* GenderControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAFB3D71CFB0E0F0083B061 /* GenderControl.swift */; };
+		DBAFB3DA1CFB3ADA0083B061 /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAFB3D91CFB3ADA0083B061 /* Child.swift */; };
+		DBAFB3DB1CFB3ADA0083B061 /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAFB3D91CFB3ADA0083B061 /* Child.swift */; };
 		DBD84BA91CFA4F9900F462DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD84BA81CFA4F9900F462DB /* AppDelegate.swift */; };
-		DBD84BAB1CFA4F9900F462DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD84BAA1CFA4F9900F462DB /* ViewController.swift */; };
-		DBD84BAE1CFA4F9900F462DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD84BAC1CFA4F9900F462DB /* Main.storyboard */; };
+		DBD84BAB1CFA4F9900F462DB /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD84BAA1CFA4F9900F462DB /* ChildViewController.swift */; };
 		DBD84BB01CFA4F9900F462DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD84BAF1CFA4F9900F462DB /* Assets.xcassets */; };
 		DBD84BB31CFA4F9900F462DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD84BB11CFA4F9900F462DB /* LaunchScreen.storyboard */; };
 		DBD84BBE1CFA4F9900F462DB /* BebeSanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD84BBD1CFA4F9900F462DB /* BebeSanoTests.swift */; };
@@ -26,10 +35,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB3A65721D021258007A2A27 /* ChildTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildTableViewController.swift; sourceTree = "<group>"; };
+		DB3A65741D021FA4007A2A27 /* PercentileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentileViewController.swift; sourceTree = "<group>"; };
+		DB3A65771D04C4E9007A2A27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB3FA0D61CFF7221007FA8B5 /* Percentile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Percentile.swift; sourceTree = "<group>"; };
+		DB3FA0D91D00C746007FA8B5 /* ChildTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildTableViewCell.swift; sourceTree = "<group>"; };
+		DB6586D71CFADDCC00454235 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+		DBAFB3D71CFB0E0F0083B061 /* GenderControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenderControl.swift; sourceTree = "<group>"; };
+		DBAFB3D91CFB3ADA0083B061 /* Child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
 		DBD84BA51CFA4F9900F462DB /* BebeSano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BebeSano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD84BA81CFA4F9900F462DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBD84BAA1CFA4F9900F462DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DBD84BAD1CFA4F9900F462DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBD84BAA1CFA4F9900F462DB /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 		DBD84BAF1CFA4F9900F462DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBD84BB21CFA4F9900F462DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBD84BB41CFA4F9900F462DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,12 +93,19 @@
 		DBD84BA71CFA4F9900F462DB /* BebeSano */ = {
 			isa = PBXGroup;
 			children = (
+				DB6586D71CFADDCC00454235 /* DatePickerDialog.swift */,
 				DBD84BA81CFA4F9900F462DB /* AppDelegate.swift */,
-				DBD84BAA1CFA4F9900F462DB /* ViewController.swift */,
-				DBD84BAC1CFA4F9900F462DB /* Main.storyboard */,
+				DBD84BAA1CFA4F9900F462DB /* ChildViewController.swift */,
+				DB3A65741D021FA4007A2A27 /* PercentileViewController.swift */,
+				DB3FA0D91D00C746007FA8B5 /* ChildTableViewCell.swift */,
+				DB3A65721D021258007A2A27 /* ChildTableViewController.swift */,
+				DB3A65761D04C4E9007A2A27 /* Main.storyboard */,
 				DBD84BAF1CFA4F9900F462DB /* Assets.xcassets */,
+				DBAFB3D91CFB3ADA0083B061 /* Child.swift */,
+				DB3FA0D61CFF7221007FA8B5 /* Percentile.swift */,
 				DBD84BB11CFA4F9900F462DB /* LaunchScreen.storyboard */,
 				DBD84BB41CFA4F9900F462DB /* Info.plist */,
+				DBAFB3D71CFB0E0F0083B061 /* GenderControl.swift */,
 			);
 			path = BebeSano;
 			sourceTree = "<group>";
@@ -178,9 +201,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB3A65781D04C4E9007A2A27 /* Main.storyboard in Resources */,
 				DBD84BB31CFA4F9900F462DB /* LaunchScreen.storyboard in Resources */,
 				DBD84BB01CFA4F9900F462DB /* Assets.xcassets in Resources */,
-				DBD84BAE1CFA4F9900F462DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,8 +221,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBD84BAB1CFA4F9900F462DB /* ViewController.swift in Sources */,
+				DB3A65751D021FA4007A2A27 /* PercentileViewController.swift in Sources */,
+				DBAFB3D81CFB0E0F0083B061 /* GenderControl.swift in Sources */,
+				DBD84BAB1CFA4F9900F462DB /* ChildViewController.swift in Sources */,
+				DB3FA0DA1D00C746007FA8B5 /* ChildTableViewCell.swift in Sources */,
 				DBD84BA91CFA4F9900F462DB /* AppDelegate.swift in Sources */,
+				DB3FA0D71CFF7221007FA8B5 /* Percentile.swift in Sources */,
+				DBAFB3DA1CFB3ADA0083B061 /* Child.swift in Sources */,
+				DB3A65731D021258007A2A27 /* ChildTableViewController.swift in Sources */,
+				DB6586D81CFADDCC00454235 /* DatePickerDialog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +237,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBAFB3DB1CFB3ADA0083B061 /* Child.swift in Sources */,
+				DB3FA0D81CFF7221007FA8B5 /* Percentile.swift in Sources */,
 				DBD84BBE1CFA4F9900F462DB /* BebeSanoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,10 +254,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DBD84BAC1CFA4F9900F462DB /* Main.storyboard */ = {
+		DB3A65761D04C4E9007A2A27 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DBD84BAD1CFA4F9900F462DB /* Base */,
+				DB3A65771D04C4E9007A2A27 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -397,6 +429,7 @@
 				DBD84BC41CFA4F9900F462DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBD84BC51CFA4F9900F462DB /* Build configuration list for PBXNativeTarget "BebeSanoTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +438,7 @@
 				DBD84BC71CFA4F9900F462DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
