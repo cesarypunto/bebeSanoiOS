@@ -17,7 +17,6 @@ class Percentile
     var weightTableMale: [Float:[Int:Float]] = [:] //kg
     
     
-    
     // MARK: Properties
     
     var gender: Child.EGender

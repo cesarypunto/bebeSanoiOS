@@ -14,6 +14,7 @@ class Child: NSObject, NSCoding {
         case Male = "male"
         case Female = "female"
     }
+
     
     // MARK: Properties
     

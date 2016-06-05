@@ -10,6 +10,7 @@ import UIKit
 
 class ChildViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
 
+    
     //MARK: Properties
         
     @IBOutlet weak var dateTextField: UITextField!

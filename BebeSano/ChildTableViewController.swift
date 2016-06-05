@@ -25,7 +25,6 @@ class ChildTableViewController: UITableViewController {
         if let savedChildren = loadChildren() {
             children += savedChildren
         }
-        
     }
 
     override func didReceiveMemoryWarning() {

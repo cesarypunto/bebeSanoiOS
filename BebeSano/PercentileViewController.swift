@@ -76,7 +76,6 @@ class PercentileViewController: UIViewController, UITextFieldDelegate {
         // Disable save if empty fields.
         let complete = !(weightTextField.text?.isEmpty)! && !(heigthTextField.text?.isEmpty)! && !(trackDateTextField.text?.isEmpty)!
         
-        
         calculateButton.hidden = !complete
     }
     
