@@ -71,7 +71,7 @@
                                     <outlet property="genderImageView" destination="KUb-Tf-MOg" id="isX-T7-8V2"/>
                                     <outlet property="nameLabel" destination="OZR-RW-fZ7" id="P9x-MH-eUq"/>
                                     <outlet property="photoImageView" destination="nSW-cI-mKD" id="mT7-Zo-IxH"/>
-                                    <segue destination="ESB-1W-JxH" kind="showDetail" identifier="ShowDetail" id="xjF-9m-3Ci"/>
+                                    <segue destination="ESB-1W-JxH" kind="show" identifier="ShowDetail" id="xjF-9m-3Ci"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -221,7 +221,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="GoO-GJ-esD">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="GoO-GJ-esD">
                                 <rect key="frame" x="20" y="80" width="560" height="321"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cuándo le pesaste y mediste?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iox-90-4Is">
@@ -249,46 +249,46 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uc-0A-rSR">
-                                        <rect key="frame" x="0.0" y="150" width="67" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cuánto medía?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6q-tf-mwC">
-                                        <rect key="frame" x="0.0" y="183" width="123" height="21"/>
+                                        <rect key="frame" x="0.0" y="150" width="123" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe la altura en m. Ejem 0.7" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mvu-z4-tMf">
-                                        <rect key="frame" x="0.0" y="216" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="183" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8W-K4-O9M">
-                                        <rect key="frame" x="0.0" y="258" width="67" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdh-5r-ZNY">
-                                        <rect key="frame" x="0.0" y="291" width="560" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdh-5r-ZNY">
+                                        <rect key="frame" x="0.0" y="225" width="560" height="30"/>
                                         <state key="normal" title="Calcular"/>
                                         <connections>
                                             <action selector="showPercentile:" destination="ESB-1W-JxH" eventType="touchUpInside" id="iJs-yl-jyf"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentil peso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uc-0A-rSR">
+                                        <rect key="frame" x="0.0" y="267" width="109" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentil altura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8W-K4-O9M">
+                                        <rect key="frame" x="0.0" y="300" width="115" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="vdh-5r-ZNY" secondAttribute="trailing" id="diE-Li-nRf"/>
+                                    <constraint firstItem="Mvu-z4-tMf" firstAttribute="trailing" secondItem="vdh-5r-ZNY" secondAttribute="trailing" id="R6p-oN-oxx"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GoO-GJ-esD" firstAttribute="leading" secondItem="iMT-H1-RRt" secondAttribute="leadingMargin" id="R3h-rh-qRu"/>
-                            <constraint firstItem="GoO-GJ-esD" firstAttribute="top" secondItem="u9C-hc-yTe" secondAttribute="bottom" constant="16" id="TpF-o1-0ck"/>
+                            <constraint firstItem="GoO-GJ-esD" firstAttribute="leading" secondItem="iMT-H1-RRt" secondAttribute="leadingMargin" id="5sW-rF-fjt"/>
+                            <constraint firstItem="GoO-GJ-esD" firstAttribute="top" secondItem="u9C-hc-yTe" secondAttribute="bottom" constant="16" id="jZc-U9-mda"/>
                         </constraints>
                     </view>
                     <connections>

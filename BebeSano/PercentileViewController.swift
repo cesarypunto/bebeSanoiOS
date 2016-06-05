@@ -50,6 +50,7 @@ class PercentileViewController: UIViewController, UITextFieldDelegate {
         // get child data.
         if let child = child {
             navigationItem.title = child.name
+
             heightPercentileLabel.text   = formatter.stringFromDate(child.birthDate)
             birthDate = child.birthDate
             weightPercentileLabel.text = child.gender.rawValue
@@ -68,7 +69,6 @@ class PercentileViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldDidEndEditing(textField: UITextField) {
         checkTextFields()
-        navigationItem.title = textField.text
     }
     
     
@@ -111,7 +111,16 @@ class PercentileViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func showPercentile(sender: UIButton) {
-             percentile = Percentile(birthDate: birthDate, trackDate: self.formatter.dateFromString(trackDateTextField.text!)!, gender: gender, weight: (weightTextField.text! as NSString).floatValue, height: (heigthTextField.text! as NSString).floatValue)
+        
+        let weight = (weightTextField.text! as NSString).floatValue
+        weightTextField.text =  NSString(format: "%.2f", weight) as String
+        let heigth = (heigthTextField.text! as NSString).floatValue
+        heigthTextField.text = NSString(format: "%.2f", heigth) as String
+        
+        if !weight.isNaN && !heigth.isNaN && !weight.isSignMinus && !heigth.isSignMinus
+        {
+                percentile = Percentile(birthDate: birthDate, trackDate: self.formatter.dateFromString(trackDateTextField.text!)!, gender: gender, weight: weight, height:heigth)
+        }
     }
     
 }
