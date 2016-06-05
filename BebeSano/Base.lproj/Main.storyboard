@@ -71,7 +71,7 @@
                                     <outlet property="genderImageView" destination="KUb-Tf-MOg" id="isX-T7-8V2"/>
                                     <outlet property="nameLabel" destination="OZR-RW-fZ7" id="P9x-MH-eUq"/>
                                     <outlet property="photoImageView" destination="nSW-cI-mKD" id="mT7-Zo-IxH"/>
-                                    <segue destination="ESB-1W-JxH" kind="showDetail" id="Q7h-mh-oaQ"/>
+                                    <segue destination="ESB-1W-JxH" kind="showDetail" identifier="ShowDetail" id="xjF-9m-3Ci"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -221,8 +221,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="GoO-GJ-esD">
-                                <rect key="frame" x="20" y="80" width="560" height="279"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="GoO-GJ-esD">
+                                <rect key="frame" x="20" y="80" width="560" height="321"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Cuándo le pesaste y mediste?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iox-90-4Is">
                                         <rect key="frame" x="0.0" y="0.0" width="238" height="21"/>
@@ -272,7 +272,17 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdh-5r-ZNY">
+                                        <rect key="frame" x="0.0" y="291" width="560" height="30"/>
+                                        <state key="normal" title="Calcular"/>
+                                        <connections>
+                                            <action selector="showPercentile:" destination="ESB-1W-JxH" eventType="touchUpInside" id="iJs-yl-jyf"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vdh-5r-ZNY" secondAttribute="trailing" id="diE-Li-nRf"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -282,6 +292,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="calculateButton" destination="vdh-5r-ZNY" id="Zkt-lv-Dd7"/>
                         <outlet property="heightPercentileLabel" destination="a8W-K4-O9M" id="kV8-Ob-y0W"/>
                         <outlet property="heigthTextField" destination="Mvu-z4-tMf" id="iti-xO-6bf"/>
                         <outlet property="trackDateTextField" destination="CU3-GB-sZn" id="ImQ-Xz-qcP"/>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PercentileViewController: UIViewController {
+class PercentileViewController: UIViewController, UITextFieldDelegate {
 
     //MARK: Porperties
     
@@ -20,27 +20,40 @@ class PercentileViewController: UIViewController {
     
     @IBOutlet weak var heightPercentileLabel: UILabel!
     
+    @IBOutlet weak var calculateButton: UIButton!
     
+    var birthDate: NSDate!
+    var gender: Child.EGender!
     var child: Child?
     var percentile: Percentile?
+    var formatter: NSDateFormatter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        calculateButton.hidden = true
+        
+        
+        weightTextField.delegate = self
+        heigthTextField.delegate = self
+        trackDateTextField.delegate = self
 
         // Do any additional setup after loading the view.
         
         heightPercentileLabel.hidden = false
         weightPercentileLabel.hidden = false
         
-        let formatter = NSDateFormatter()
+        self.formatter = NSDateFormatter()
         let gbDateFormat = NSDateFormatter.dateFormatFromTemplate("MMddyyyy", options: 0, locale: NSLocale(localeIdentifier: "es-ES"))
-        formatter.dateFormat = gbDateFormat
+        self.formatter.dateFormat = gbDateFormat
         
         // get child data.
         if let child = child {
             navigationItem.title = child.name
             heightPercentileLabel.text   = formatter.stringFromDate(child.birthDate)
+            birthDate = child.birthDate
             weightPercentileLabel.text = child.gender.rawValue
+            gender = child.gender
         }
         
     }
@@ -48,6 +61,23 @@ class PercentileViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    // MARK: UITextFieldDelegate
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        checkTextFields()
+        navigationItem.title = textField.text
+    }
+    
+    
+    func checkTextFields() {
+        // Disable save if empty fields.
+        let complete = !(weightTextField.text?.isEmpty)! && !(heigthTextField.text?.isEmpty)! && !(trackDateTextField.text?.isEmpty)!
+        
+        
+        calculateButton.hidden = !complete
     }
     
 
@@ -59,24 +89,10 @@ class PercentileViewController: UIViewController {
         DatePickerDialog().show("Selecciona una fecha", doneButtonTitle: "Aceptar", cancelButtonTitle: "Cancelar", datePickerMode: .Date) {
             (date) -> Void in
             
-            //Format date
-            let formatter = NSDateFormatter()
-            let gbDateFormat = NSDateFormatter.dateFormatFromTemplate("MMddyyyy", options: 0, locale: NSLocale(localeIdentifier: "es-ES"))
-            formatter.dateFormat = gbDateFormat
-            
-            self.trackDateTextField.text = formatter.stringFromDate(date)
+            self.trackDateTextField.text = self.formatter.stringFromDate(date)
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     /**
      * Called when 'return' key pressed. return NO to ignore.
@@ -93,5 +109,9 @@ class PercentileViewController: UIViewController {
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
     }
-
+    
+    @IBAction func showPercentile(sender: UIButton) {
+             percentile = Percentile(birthDate: birthDate, trackDate: self.formatter.dateFromString(trackDateTextField.text!)!, gender: gender, weight: (weightTextField.text! as NSString).floatValue, height: (heigthTextField.text! as NSString).floatValue)
+    }
+    
 }

@@ -90,7 +90,7 @@ class ChildTableViewController: UITableViewController {
         
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "Show" {
+        if segue.identifier == "ShowDetail" {
             let percentileDetailViewController = segue.destinationViewController as! PercentileViewController
             
             // Get the cell that generated this segue.

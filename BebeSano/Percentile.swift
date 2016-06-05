@@ -42,7 +42,6 @@ class Percentile
         //get child months
         self.months = getMonths(fromDate: birthDate, toDate: trackDate)
         
-        
     }
     
     func getMonths(fromDate a: NSDate, toDate b: NSDate) -> Float{
