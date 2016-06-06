@@ -12,13 +12,16 @@ class GenderControl: UIView {
     
     // MARK: Properties
     var genderButtons = [UIButton]()
-    var gender = 1 //1 male - 2 female. Force to one selected
+    var gender : Child.EGender!
+    
     let spacing = 5
     //let controlWidth = 105
 
     // MARK: Initialization
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        
+        gender = Child.EGender.Male //default value
         
         let maleOnImage = UIImage(named: "maleOn")
         let maleOffImage = UIImage(named: "maleOff")
@@ -76,18 +79,18 @@ class GenderControl: UIView {
     }
     
     func getGender() -> Child.EGender{
-            return gender == 1 ? Child.EGender.Male: Child.EGender.Female
+            return gender
     }
     
     // MARK: Button Action
     func genderButtonMaleTapped(button: UIButton) {
-        gender = 1
+        gender = Child.EGender.Male
         genderButtons[0].selected = true
         genderButtons[1].selected = false
     }
     
     func genderButtonFemaleTapped(button: UIButton) {
-        gender = 2
+        gender = Child.EGender.Female
         genderButtons[0].selected = false
         genderButtons[1].selected = true
         

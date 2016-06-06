@@ -29,19 +29,17 @@ class ChildViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
         nameTextField.delegate = self
         dateTextField.delegate = self
 
-         saveButton.enabled = false
+        saveButton.enabled = false
         
         //Show round image
         self.photoImageView.layer.cornerRadius = self.photoImageView.frame.size.width / 2;
         self.photoImageView.clipsToBounds = true;
         
-        //self.photoImageView.layer.cornerRadius = 10.0
 
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     // MARK: UITextFieldDelegate
@@ -54,21 +52,18 @@ class ChildViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
     
     func textFieldDidEndEditing(textField: UITextField) {
         checkTextFields()
-        navigationItem.title = textField.text
     }
     
-    func textFieldDidBeginEditing(textField: UITextField) {
-        // Disable the Save button while editing.
-        saveButton.enabled = false
-    }
     
     func checkTextFields() {
         // Disable save if empty fields.
-        let text = nameTextField.text ?? ""
-        saveButton.enabled = !text.isEmpty
+        let textName = nameTextField.text
+        let textDate = dateTextField.text
+
+        saveButton.enabled = !textName!.isEmpty && !textDate!.isEmpty
+        
     }
     
-
     
     //MARK: Actions
 
