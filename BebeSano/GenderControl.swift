@@ -95,6 +95,5 @@ class GenderControl: UIView {
         genderButtons[1].selected = true
         
     }
-    
 
 }

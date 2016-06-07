@@ -40,8 +40,8 @@ class PercentileViewController: UIViewController, UITextFieldDelegate {
 
         // Do any additional setup after loading the view.
         
-        heightPercentileLabel.hidden = false
-        weightPercentileLabel.hidden = false
+        heightPercentileLabel.hidden = true
+        weightPercentileLabel.hidden = true
         
         self.formatter = NSDateFormatter()
         let gbDateFormat = NSDateFormatter.dateFormatFromTemplate("MMddyyyy", options: 0, locale: NSLocale(localeIdentifier: "es-ES"))
@@ -51,9 +51,7 @@ class PercentileViewController: UIViewController, UITextFieldDelegate {
         if let child = child {
             navigationItem.title = child.name
 
-            heightPercentileLabel.text   = formatter.stringFromDate(child.birthDate)
             birthDate = child.birthDate
-            weightPercentileLabel.text = child.gender.rawValue
             gender = child.gender
         }
         
@@ -111,14 +109,23 @@ class PercentileViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func showPercentile(sender: UIButton) {
         
-        let weight = (weightTextField.text! as NSString).floatValue
+        let weight = (weightTextField.text! as NSString).doubleValue
         weightTextField.text =  NSString(format: "%.2f", weight) as String
-        let heigth = (heigthTextField.text! as NSString).floatValue
+        let heigth = (heigthTextField.text! as NSString).doubleValue
         heigthTextField.text = NSString(format: "%.2f", heigth) as String
         
         if !weight.isNaN && !heigth.isNaN && !weight.isSignMinus && !heigth.isSignMinus
         {
                 percentile = Percentile(birthDate: birthDate, trackDate: self.formatter.dateFromString(trackDateTextField.text!)!, gender: gender, weight: weight, height:heigth)
+            
+            if percentile != nil{
+                weightPercentileLabel.text = "Percentil peso: \(percentile!.weightPercentile)"
+                heightPercentileLabel.text = "Percentil altura: \(percentile!.heightPercentile)"
+                
+                heightPercentileLabel.hidden = false
+                weightPercentileLabel.hidden = false
+            }
+
         }
     }
     

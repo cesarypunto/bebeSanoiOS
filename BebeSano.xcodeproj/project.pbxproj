@@ -20,7 +20,6 @@
 		DBD84BA91CFA4F9900F462DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD84BA81CFA4F9900F462DB /* AppDelegate.swift */; };
 		DBD84BAB1CFA4F9900F462DB /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD84BAA1CFA4F9900F462DB /* ChildViewController.swift */; };
 		DBD84BB01CFA4F9900F462DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD84BAF1CFA4F9900F462DB /* Assets.xcassets */; };
-		DBD84BBE1CFA4F9900F462DB /* BebeSanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD84BBD1CFA4F9900F462DB /* BebeSanoTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +47,6 @@
 		DBD84BAF1CFA4F9900F462DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBD84BB41CFA4F9900F462DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBD84BB91CFA4F9900F462DB /* BebeSanoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BebeSanoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBD84BBD1CFA4F9900F462DB /* BebeSanoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BebeSanoTests.swift; sourceTree = "<group>"; };
-		DBD84BBF1CFA4F9900F462DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				DBD84BA71CFA4F9900F462DB /* BebeSano */,
-				DBD84BBC1CFA4F9900F462DB /* BebeSanoTests */,
 				DBD84BA61CFA4F9900F462DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,15 +101,6 @@
 				DBAFB3D71CFB0E0F0083B061 /* GenderControl.swift */,
 			);
 			path = BebeSano;
-			sourceTree = "<group>";
-		};
-		DBD84BBC1CFA4F9900F462DB /* BebeSanoTests */ = {
-			isa = PBXGroup;
-			children = (
-				DBD84BBD1CFA4F9900F462DB /* BebeSanoTests.swift */,
-				DBD84BBF1CFA4F9900F462DB /* Info.plist */,
-			);
-			path = BebeSanoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +222,6 @@
 			files = (
 				DBAFB3DB1CFB3ADA0083B061 /* Child.swift in Sources */,
 				DB3FA0D81CFF7221007FA8B5 /* Percentile.swift in Sources */,
-				DBD84BBE1CFA4F9900F462DB /* BebeSanoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
